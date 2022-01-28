@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Window-->
+        <!--Crypto assets-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myCryptoHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CryptoViewController" customModule="myCryptoHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,29 +27,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-xH-4YK">
-                                                    <rect key="frame" x="16" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-xH-4YK">
+                                                    <rect key="frame" x="26" y="11" width="45" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgM-70-Gft">
-                                                    <rect key="frame" x="91" y="10.5" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBc-dl-Sws">
+                                                    <rect key="frame" x="310" y="11" width="39" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBc-dl-Sws">
-                                                    <rect key="frame" x="166" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgM-70-Gft">
+                                                    <rect key="frame" x="91" y="11" width="58" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WgM-70-Gft" firstAttribute="leading" secondItem="F4n-xH-4YK" secondAttribute="trailing" constant="20" id="B5C-TX-fhN"/>
+                                                <constraint firstItem="F4n-xH-4YK" firstAttribute="leading" secondItem="sTL-QZ-PyV" secondAttribute="leadingMargin" constant="10" id="DDw-3a-97f"/>
+                                                <constraint firstItem="WgM-70-Gft" firstAttribute="top" secondItem="sTL-QZ-PyV" secondAttribute="topMargin" id="Qlg-p1-pfp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DBc-dl-Sws" secondAttribute="trailing" constant="10" id="idE-6q-ZFa"/>
+                                                <constraint firstItem="F4n-xH-4YK" firstAttribute="top" secondItem="sTL-QZ-PyV" secondAttribute="topMargin" id="mZa-LT-waw"/>
+                                                <constraint firstItem="DBc-dl-Sws" firstAttribute="top" secondItem="sTL-QZ-PyV" secondAttribute="topMargin" id="qmW-Ie-vQc"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="F4n-xH-4YK" id="Y0v-BL-smr"/>
+                                            <outlet property="priceLabel" destination="DBc-dl-Sws" id="S2t-6x-fDp"/>
+                                            <outlet property="symbolLabel" destination="WgM-70-Gft" id="MDO-RE-lbG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -63,7 +73,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKx-kU-udz" secondAttribute="trailing" id="ybU-nK-Jvs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Window" id="awZ-u7-fvK"/>
+                    <navigationItem key="navigationItem" title="Crypto assets" id="awZ-u7-fvK"/>
                     <connections>
                         <outlet property="tableView" destination="HKx-kU-udz" id="FZY-hB-s0k"/>
                     </connections>

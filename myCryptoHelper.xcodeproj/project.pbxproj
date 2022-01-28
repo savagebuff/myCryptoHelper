@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C08C88D27A48E8A00EF9730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08C88C27A48E8A00EF9730 /* AppDelegate.swift */; };
 		2C08C88F27A48E8A00EF9730 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08C88E27A48E8A00EF9730 /* SceneDelegate.swift */; };
-		2C08C89127A48E8A00EF9730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08C89027A48E8A00EF9730 /* ViewController.swift */; };
+		2C08C89127A48E8A00EF9730 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08C89027A48E8A00EF9730 /* CryptoViewController.swift */; };
 		2C08C89427A48E8A00EF9730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08C89227A48E8A00EF9730 /* Main.storyboard */; };
 		2C08C89627A48E8D00EF9730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C08C89527A48E8D00EF9730 /* Assets.xcassets */; };
 		2C08C89927A48E8D00EF9730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08C89727A48E8D00EF9730 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		2C08C88927A48E8A00EF9730 /* myCryptoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCryptoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C08C88C27A48E8A00EF9730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C08C88E27A48E8A00EF9730 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C08C89027A48E8A00EF9730 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C08C89027A48E8A00EF9730 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		2C08C89327A48E8A00EF9730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C08C89527A48E8D00EF9730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C08C89827A48E8D00EF9730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				2C08C8A027A4911200EF9730 /* NomicsAPICaller.swift */,
 				2C08C88C27A48E8A00EF9730 /* AppDelegate.swift */,
 				2C08C88E27A48E8A00EF9730 /* SceneDelegate.swift */,
-				2C08C89027A48E8A00EF9730 /* ViewController.swift */,
+				2C08C89027A48E8A00EF9730 /* CryptoViewController.swift */,
 				2C08C8A227A49E4C00EF9730 /* CryptoTableViewCell.swift */,
 				2C08C89227A48E8A00EF9730 /* Main.storyboard */,
 				2C08C89527A48E8D00EF9730 /* Assets.xcassets */,
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C08C89127A48E8A00EF9730 /* ViewController.swift in Sources */,
+				2C08C89127A48E8A00EF9730 /* CryptoViewController.swift in Sources */,
 				2C08C88D27A48E8A00EF9730 /* AppDelegate.swift in Sources */,
 				2C08C88F27A48E8A00EF9730 /* SceneDelegate.swift in Sources */,
 				2C08C8A527A4A43100EF9730 /* Models.swift in Sources */,
